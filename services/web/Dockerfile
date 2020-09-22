@@ -1,4 +1,4 @@
-FROM ruby:2.5
+FROM ruby:2.7
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
 RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 RUN mkdir /app
