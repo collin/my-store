@@ -1,3 +1,4 @@
+docker-compose -f $1 run web bundle exec rails db:create
 docker-compose -f $1 run web bundle exec rails db:migrate
 docker-compose -f $1 run web bundle exec rails db:seed
 docker-compose -f $1 run web bundle exec rake spree_sample:load
